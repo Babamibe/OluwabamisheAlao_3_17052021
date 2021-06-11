@@ -1,0 +1,10 @@
+/*Color hues*/
+
+@mixin text-hue($color:$color-tertiary) {
+    color: darken($color-tertiary, 40%);
+    
+} 
+
+@mixin background-hue($color) {
+    background-color: darken($color, 4%);
+}

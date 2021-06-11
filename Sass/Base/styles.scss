@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(../../Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../../../../Font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../../../../Font/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(../../../../Font/Roboto/Roboto-Thin.ttf);
+}
+
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Pages/accueil";
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin:0;
+}
+
+h1{
+    font-family: 'Shrikhand', Arial, Helvetica, sans-serif ;
+    font-size: 2em;
+}
+
+
+h3, h4, p{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+li{
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: $color-black;
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    &--header{
+        flex-direction: row;
+        align-items: center;
+        i{
+            font-size: 1.5em;
+            position: absolute;
+            top: 45px;
+            left: 20px;
+        }
+    }
+    &--grey{
+        background-color: $color-grey;
+        padding-bottom: 20px;
+    }
+    img{
+        width: 100%;
+    }
+    &--restaurant{
+        border-radius: 40px 40px 0 0;
+        margin-bottom: 0;
+        margin-top: -40px;
+        position: relative;
+    }
+}
+
+.header{
+    background-color: $color-white;
+    flex-direction: row;
+    align-items: center;
+    i{
+        font-size: 1.5em;
+        position: absolute;
+        top: 45px;
+        left: 20px;
+    }
+    &--accueil{
+        position: relative;
+        box-shadow: 0 4px 2px -2px lightgrey;
+        text-align: center;
+    }       
+    
+}
+.footer{
+    margin-top: 0px;
+    background-color: $color-footer;
+    line-height: 1.5;
+    ul{
+        margin-left: 20px;
+    }
+    h2{
+        font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+        color: $color-white;
+    }
+    a{
+        color: $color-white;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+    &--image{
+        display: flex;
+        align-items: center;
+        color: $color-white;
+        i{
+            padding-right: 15px;
+        }
+        p{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.location{
+    margin: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    @include background-hue($color-grey);
+    i{
+        padding: 20px;
+    }
+    input{
+        border:none;
+        font-weight: bold;
+        font-size: 20px;
+        @include background-hue($color-grey)
+    }
+}
+.explore{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 40px 20px;
+    text-align: center;
+    h2{
+        margin-bottom: 10px;
+    }
+    p{
+        margin-top: 10px;
+    }
+    
+    
+}
+.btn{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    border: none;
+    background-color: $color-secondary;
+    background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    width: 270px;
+    color: $color-white;
+    box-shadow: $box-shadow;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    p{
+        border-radius: 50%;
+        color: #FFF;
+        padding: 3px 7px;
+        background-color: $color-primary;
+        margin-right: -11PX;
+        z-index: 1;
+    }
+    &__text{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 15px;
+        width: 300px;
+        background-color: $color-grey;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+        p{
+            color: $color-black;
+            background-color: $color-grey;
+        }
+    }
+    
+}
+
+.presentation{
+    li{
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        i{
+            padding: 20px;
+        }
+    }
+}
+
+
+.restaurant-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    i{
+        font-size: 1.5em;
+        padding: 20px;
+    }
+}
+
+.menu{
+    width: 350px;
+    &__title{
+        text-transform: uppercase;
+        font-family: 'Roboto-Thin';
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0 1px 15px 0.5px #80808045;
+        border-radius: 15px;
+        margin: 20px 0;
+        padding: 10px;
+        h4{
+            margin: 10px 0 5px 0;
+        }
+        
+        &--price{
+            position: absolute;
+            margin-left: 280px;
+            margin-top: 39px;
+            font-weight: bold;
+        }
+        &--text{
+            margin: 5px 0;
+        }
+    }
+}
+

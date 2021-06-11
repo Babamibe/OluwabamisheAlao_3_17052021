@@ -1,0 +1,407 @@
+@font-face {
+  font-family: 'Shrikhand';
+  src: url(../../Shrikhand-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../../../Font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(../../../../Font/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url(../../../../Font/Roboto/Roboto-Thin.ttf);
+}
+
+/*Colors*/
+/*Color hues*/
+/*image cards*/
+.restaurant-card {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 1px 15px 0.5px #80808045;
+          box-shadow: 0 1px 15px 0.5px #80808045;
+  width: 330px;
+  height: 265px;
+  margin: 20px;
+}
+
+.restaurant-card img {
+  width: 330px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant-card__description {
+  margin: -10px 0px 0 0;
+  background-color: #FFF;
+  padding: 12px 0px 6px 0px;
+  border-radius: 0 0 20px 20px;
+}
+
+.restaurant-card__text {
+  padding: 0px 10px;
+  margin: 5px;
+}
+
+.restaurant-card--bold {
+  font-weight: bold;
+}
+
+.restaurant-card__new {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: -195px;
+  font-weight: bold;
+  background: #99E2D0;
+  padding: 8px;
+  border-radius: 2px;
+  width: 100px;
+  text-align: center;
+  color: #278870;
+}
+
+.restaurant-card i {
+  position: absolute;
+  margin-left: 285px;
+  margin-top: -35px;
+  font-size: 1.5em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+h3, h4, p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container--header {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container--header i {
+  font-size: 1.5em;
+  position: absolute;
+  top: 45px;
+  left: 20px;
+}
+
+.container--grey {
+  background-color: #F8F8F8;
+  padding-bottom: 20px;
+}
+
+.container img {
+  width: 100%;
+}
+
+.container--restaurant {
+  border-radius: 40px 40px 0 0;
+  margin-bottom: 0;
+  margin-top: -40px;
+  position: relative;
+}
+
+.header {
+  background-color: #FFF;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header i {
+  font-size: 1.5em;
+  position: absolute;
+  top: 45px;
+  left: 20px;
+}
+
+.header--accueil {
+  position: relative;
+  -webkit-box-shadow: 0 4px 2px -2px lightgrey;
+          box-shadow: 0 4px 2px -2px lightgrey;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 0px;
+  background-color: #585353;
+  line-height: 1.5;
+}
+
+.footer ul {
+  margin-left: 20px;
+}
+
+.footer h2 {
+  font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+  color: #FFF;
+}
+
+.footer a {
+  color: #FFF;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.footer--image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+}
+
+.footer--image i {
+  padding-right: 15px;
+}
+
+.footer--image p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.location {
+  margin: 0px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #eeeeee;
+}
+
+.location i {
+  padding: 20px;
+}
+
+.location input {
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #eeeeee;
+}
+
+.explore {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 40px 20px;
+  text-align: center;
+}
+
+.explore h2 {
+  margin-bottom: 10px;
+}
+
+.explore p {
+  margin-top: 10px;
+}
+
+.btn {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #FF79DA;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  width: 270px;
+  color: #FFF;
+  -webkit-box-shadow: 0 1px 15px 0.5px #80808045;
+          box-shadow: 0 1px 15px 0.5px #80808045;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description p {
+  border-radius: 50%;
+  color: #FFF;
+  padding: 3px 7px;
+  background-color: #9356DC;
+  margin-right: -11PX;
+  z-index: 1;
+}
+
+.description__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  width: 300px;
+  background-color: #F8F8F8;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.description__text p {
+  color: #000000;
+  background-color: #F8F8F8;
+}
+
+.presentation li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+.presentation li i {
+  padding: 20px;
+}
+
+.restaurant-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.restaurant-name i {
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.menu {
+  width: 350px;
+}
+
+.menu__title {
+  text-transform: uppercase;
+  font-family: 'Roboto-Thin';
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 15px 0.5px #80808045;
+          box-shadow: 0 1px 15px 0.5px #80808045;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.menu__item h4 {
+  margin: 10px 0 5px 0;
+}
+
+.menu__item--price {
+  position: absolute;
+  margin-left: 280px;
+  margin-top: 39px;
+  font-weight: bold;
+}
+
+.menu__item--text {
+  margin: 5px 0;
+}
+/*# sourceMappingURL=styles.css.map */
