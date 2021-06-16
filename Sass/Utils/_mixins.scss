@@ -1,10 +1,15 @@
 /*Color hues*/
 
 @mixin text-hue($color:$color-tertiary) {
-    color: darken($color-tertiary, 40%);
+    color: darken($color, 40%);
     
 } 
 
 @mixin background-hue($color) {
     background-color: darken($color, 4%);
+}
+
+@mixin hover($color) {
+    background-color: lighten($color: $color, $amount: 10%);
+    box-shadow: 0 1px 15px 0.5px darken(#80808045, 10%);
 }
