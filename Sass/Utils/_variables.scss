@@ -12,12 +12,15 @@ $color-footer: #585353;
 $box-shadow: 0 1px 15px 0.5px #80808045;
 
 /*Breakpoints*/
+$breakpoints: (
+    "x-small": 320px,
+    "small": 425px, 
+    "medium":768px, 
+    "large":1024px, 
+    "x-large":1200px, 
+    "xx-large":1400px, 
+    "max-large":1500px
+);
 
-$breakpoint-big-mobile: 425px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop-s: 1024px;
-$breakpoint-desktop-m: 1200px;
-$breakpoint-desktop-l: 1400px;
-$breakpoint-screen: 1500px;
 
     

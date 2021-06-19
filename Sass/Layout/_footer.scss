@@ -1,0 +1,28 @@
+.footer{
+    margin-top: 0px;
+    background-color: $color-footer;
+    line-height: 1.5;
+    ul{
+        margin-left: 20px;
+    }
+    h2{
+        font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+        color: $color-white;
+    }
+    a{
+        color: $color-white;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+    &--image{
+        display: flex;
+        align-items: center;
+        color: $color-white;
+        i{
+            padding-right: 15px;
+        }
+        p{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}

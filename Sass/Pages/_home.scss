@@ -1,0 +1,139 @@
+// Input area for location
+
+.location{
+    margin: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    @include background-hue($color-grey);
+    i{
+        padding: 20px;
+    }
+    input{
+        border:none;
+        font-weight: bold;
+        font-size: 20px;
+        @include background-hue($color-grey)
+    }
+}
+
+/* Home area*/
+.explore{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 40px 20px;
+    text-align: center;
+    h2{
+        margin-bottom: 10px;
+    }
+    p{
+        margin-top: 10px;
+    }
+
+
+}
+
+
+.presentation{
+    li{
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        i{
+            padding: 20px;
+        }
+    }
+}
+
+
+.description{
+    display: flex;
+    align-items: center;
+    p{
+        border-radius: 50%;
+        color: #FFF;
+        padding: 3px 7px;
+        background-color: $color-primary;
+        margin-right: -11PX;
+        z-index: 1;
+    }
+    &__text{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 15px;
+        width: 300px;
+        background-color: $color-grey;
+        box-shadow: $box-shadow;
+        p{
+            color: $color-black;
+            background-color: transparent;
+        }
+    }
+    &:hover i{
+        color: $color-primary;
+    }
+    &:hover &__text{
+        background-color: rgba(147, 86, 220, 0.1);
+    }
+}
+
+
+.restaurant-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__item{
+        position: relative;
+        width: fit-content;
+    }
+}
+
+/*image cards*/
+.restaurant-card{
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+    width: 330px;
+    height: 265px;
+    margin: 20px;
+    img{
+        width: 330px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    &__description{
+        margin: -10px 0px 0 0;
+        background-color: $color-white;
+        padding: 12px 0px 6px 0px;
+        border-radius: 0 0 20px 20px;
+    }
+    &__text{
+        padding: 0px 10px;
+        margin: 5px;
+    }
+    &--bold{
+        font-weight: bold;
+    }
+    &__new{
+        position: absolute;
+        margin-left: 220px;
+        margin-top: -195px;
+        font-weight: bold;
+        background: $color-tertiary;
+        padding: 8px;
+        border-radius: 2px;
+        width: 100px;
+        text-align: center;
+        @include text-hue($color-tertiary);
+    }
+    i{
+        position: absolute;
+        margin-left: 285px;
+        margin-top: -35px;
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,51 @@
+.loader{
+    position: absolute;
+    font-family: 'Shrikhand';
+    font-size: 40px;
+    color: $color-tertiary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0px;
+    background: $color-primary;
+    animation: loader 4s ease-out;
+    animation-iteration-count: 1;
+    opacity:0 ;
+    z-index: -1;
+    
+}
+
+.loader::after{
+    content: '\2026';
+    color: $color-secondary;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    animation: point steps(4, end) 2s infinite;
+    width: 0;
+}
+
+@keyframes point{
+    to{
+        width: 1em;
+    }
+}
+
+@keyframes loader{
+    0%{
+        opacity: 1;
+        z-index: 55;
+        visibility: visible;
+    }
+    85%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+        visibility: hidden;
+    }
+}

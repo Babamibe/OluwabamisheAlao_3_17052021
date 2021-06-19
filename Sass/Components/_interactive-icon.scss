@@ -1,0 +1,59 @@
+.fas{
+    &.fa-heart{
+        color: #9c47fc;
+        display: block;
+        background: -webkit-linear-gradient(#9356DC, #FF79DA);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: none;
+    }
+}
+
+
+.heart{
+    font-size: 1.5em;
+    
+    &:hover .fas{
+        &.fa-heart{
+            display: block;
+            animation: fadein 1.5s;
+        }
+    }
+    &:hover .far{
+        &.fa-heart{
+            display: none;
+        }
+    }
+    &--home{
+        position: absolute;
+        font-size: 1.5em;
+        left: 300px;
+        top: 240px;
+        height: 27px;
+        width: 27px;
+        &:hover .fas{
+            &.fa-heart{
+                display: block;
+                animation: fadein 1.5s;
+            }
+        }
+        &:hover .far{
+            &.fa-heart{
+                display: none;
+            }
+        }
+    }
+
+    
+}
+
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
