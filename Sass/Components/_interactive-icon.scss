@@ -32,6 +32,21 @@
         top: 240px;
         height: 27px;
         width: 27px;
+        @include breakpoint(large){
+            left: 410px;
+            top: 282px;
+            font-size: 2em;
+            height: 32px;
+            width: 32px;
+        }
+        @include breakpoint(xx-large){
+            left: 468px;
+            top: 306px;
+        }
+        @include breakpoint(max-large){
+            left: 260px;
+            top: 248px;
+        }
         &:hover .fas{
             &.fa-heart{
                 display: block;

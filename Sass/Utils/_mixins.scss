@@ -13,3 +13,9 @@
     background-color: lighten($color: $color, $amount: 10%);
     box-shadow: 0 1px 15px 0.5px darken(#80808045, 10%);
 }
+
+@mixin breakpoint($breakpoint){
+    @media screen and (min-width: map-get($map: $breakpoints, $key:$breakpoint ) ) {
+        @content;
+    }
+}

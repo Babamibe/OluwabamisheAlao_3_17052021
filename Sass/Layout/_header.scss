@@ -9,6 +9,10 @@
         position: absolute;
         top: 23px;
         left: 20px;
+        @include breakpoint(large){
+            font-size: 2em;
+            top: 41px;
+        }
     }
     &--accueil{
         position: relative;

@@ -86,6 +86,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include breakpoint(medium){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    };
     &__item{
         position: relative;
         width: fit-content;
@@ -97,19 +102,53 @@
     border-radius: 15px;
     box-shadow: $box-shadow;
     width: 330px;
+    max-width: 500px;
     height: 265px;
     margin: 20px;
+    @include breakpoint(medium){
+        width: 344px;
+    }
+    @include breakpoint(large){
+        width: 441px;
+        height: 300px;
+        margin: 35px;
+    }
+    @include breakpoint(xx-large){
+        width: 500px;
+        height: 326px;
+    }
+    @include breakpoint(max-large){
+        width: 300px;
+        height: 265px;
+        margin: 30px;
+    }
     img{
         width: 330px;
+        max-width: 500px;
         height: 200px;
         object-fit: cover;
-        border-radius: 15px 15px 0 0;
+        border-radius: 15px 15px 0 0;  
+        @include breakpoint(medium){
+            width: 344px;
+        }     
+        @include breakpoint(large){
+            width: 441px;
+            height: 235px;
+        }
+        @include breakpoint(xx-large){
+            width: 500px;
+            height: 260px;
+        }
+        @include breakpoint(max-large){
+            width: 300px;
+            height: 200px;
+        }
     }
     &__description{
         margin: -10px 0px 0 0;
         background-color: $color-white;
         padding: 12px 0px 6px 0px;
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 15px 15px;
     }
     &__text{
         padding: 0px 10px;
@@ -129,6 +168,18 @@
         width: 100px;
         text-align: center;
         @include text-hue($color-tertiary);
+        @include breakpoint(large){
+            margin-left: 312px;
+            margin-top: -222px;
+        }
+        @include breakpoint(xx-large){
+            margin-left: 374px;
+            margin-top: -242px;
+        }
+        @include breakpoint(max-large){
+            margin-top: -190px;
+            margin-left: 176px;
+        }
     }
     i{
         position: absolute;

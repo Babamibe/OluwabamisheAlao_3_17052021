@@ -8,6 +8,9 @@ body{
     margin:0;
     max-width: 1500px;
     min-width: fit-content;
+    @include breakpoint(max-large){
+        margin: auto;
+    }
 }
 
 

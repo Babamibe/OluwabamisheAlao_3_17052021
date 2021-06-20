@@ -20,6 +20,8 @@
     }
     img{
         width: 100%;
+        object-fit: cover;
+        max-height: 250px;
     }
     &--restaurant{
         border-radius: 40px 40px 0 0;
@@ -27,6 +29,10 @@
         margin-top: -40px;
         position: relative;
         align-items: center;
+        @include breakpoint(large){
+            border-radius: 0px;
+            margin-top: -10px;
+        }
     }
     &__main-image{
         object-fit: cover;
