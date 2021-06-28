@@ -158,7 +158,7 @@ h2 {
 
 .footer {
   margin-top: 0px;
-  background-color: #585353;
+  background-color: #252323;
   line-height: 1.5;
 }
 
@@ -508,7 +508,7 @@ h2 {
 
 .btn {
   margin: 20px;
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 50px;
   font-size: 1em;
   border: none;
@@ -631,13 +631,15 @@ h2 {
 }
 
 .location i {
-  padding: 20px;
+  padding: 20px 0 20px 20px;
 }
 
 .location input {
   border: none;
   font-weight: bold;
   font-size: 20px;
+  width: 200px;
+  padding-left: 20px;
   background-color: #eeeeee;
 }
 

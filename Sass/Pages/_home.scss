@@ -8,12 +8,14 @@
     display: flex;
     @include background-hue($color-grey);
     i{
-        padding: 20px;
+        padding: 20px 0 20px 20px;
     }
     input{
         border:none;
         font-weight: bold;
         font-size: 20px;
+        width: 200px;
+        padding-left: 20px;
         @include background-hue($color-grey)
     }
 }
